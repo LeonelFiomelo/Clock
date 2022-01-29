@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:wght@200;300;400&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <title>Clock</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mode">
+            <a href="#" class="mode__link" id="mode__link">
+                <div class="mode__container" id="mode__container">
+                    <div class="mode__circle a b c" id="mode__circle">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="clock">
+            <div class="clock__top" id="clock__top">
+                <p class="clock__p" id="clock__nameDay"></p>
+                <p class="clock__p" id="clock__numDay"></p>
+                <p class="clock__p">de</p>
+                <p class="clock__p" id="clock__month"></p>
+                <p class="clock__p">del</p>
+                <p class="clock__p" id="clock__year"></p>
+            </div>
+            <div class="clock__bottom" id="clock__bottom">
+                <div class="clock__hms">
+                    <p class="clock__p" id="clock__hour"></p>
+                    <p class="clock__p">:</p>
+                    <p class="clock__p" id="clock__minute"></p>
+                    <p class="clock__p">:</p>
+                    <p class="clock__p" id="clock__second"></p>
+                    <p class="clock__p clock__p--milliseconds" id="clock__milliseconds">12</p>
+                </div>
+                <p class="clock__p clock__p--ampm" id="clock__ampm"></p>
+            </div>
+        </div>
+        <div class="config" id="config">
+            <button class="config__button" id="config__format">Format</button>
+            <button class="config__button" id="config__milliseconds">Milliseconds</button>
+        </div>
+    </div>
+</body>
+<script src="/js/main.js"></script>
+<script src="/js/mode.js"></script>
+</html>

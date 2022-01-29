@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  background-image: radial-gradient(circle, #4b6cb7 10%, #182848 90%);
+}
+
+.mode {
+  height: 4rem;
+  min-width: 32rem;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mode .mode__container {
+  height: 2.8rem;
+  width: 5.2rem;
+  background-color: #00000090;
+  border-radius: 1.4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+.mode .mode__container .mode__circle {
+  height: 2rem;
+  width: 2rem;
+  margin: auto;
+  margin-left: 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: margin 1s;
+}
+.mode .mode__container .mode__circle--clear {
+  margin: auto;
+  margin-right: 0;
+  background-color: #000000;
+}
+.mode .mode__container--clear {
+  background-color: #ffffff90;
+}
+
+.clock {
+  min-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #ffffff;
+}
+.clock .clock__top {
+  height: 6rem;
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000090;
+  border-radius: 0.6rem;
+}
+.clock .clock__top .clock__p {
+  font-size: 2rem;
+}
+.clock .clock__bottom {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000090;
+  border-radius: 0.6rem;
+}
+.clock .clock__bottom .clock__hms {
+  display: flex;
+  margin: 0 auto;
+  column-gap: 0.8rem;
+}
+.clock .clock__bottom .clock__p {
+  font-size: 4.6rem;
+}
+.clock .clock__bottom .clock__p--milliseconds {
+  min-width: 3.5rem;
+  display: none;
+  margin: auto 0.8rem;
+  font-size: 2rem;
+}
+.clock .clock__bottom .clock__p--show {
+  display: flex;
+}
+.clock .clock__bottom .clock__p--ampm {
+  font-size: 1.4rem;
+}
+.clock .clock__top--clear {
+  color: #000000;
+  background-color: #ffffff90;
+}
+.clock .clock__bottom--clear {
+  color: #000000;
+  background-color: #ffffff90;
+}
+
+.config {
+  height: 4rem;
+  min-width: 32rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00000090;
+  border-radius: 0.4rem;
+}
+.config .config__button {
+  font-size: 1rem;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 0.6rem;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #e76f5199;
+  cursor: pointer;
+}
+.config .config__button:hover {
+  background-color: #e76f51;
+  transition: 0.5s;
+}
+
+.config--clear {
+  background-color: #ffffff90;
+}
+
+/*# sourceMappingURL=main.css.map */
