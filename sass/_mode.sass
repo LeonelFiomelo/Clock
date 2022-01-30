@@ -1,7 +1,6 @@
 .mode
     height: 4rem
     min-width: 32rem
-    // background-color: $color-2
     border-radius: .6rem
     display: flex
     justify-content: flex-start
@@ -14,21 +13,24 @@
         border-radius: 1.4rem
         display: flex
         align-items: center
-        padding: 0 .5rem
+        position: relative
 
-        .mode__circle
+        body.dark &
+            background-color: $color-1-clear
+            transition: .4s
+
+        &::after
+            content: ""
             height: 2rem
             width: 2rem
-            margin: auto
-            margin-left: 0
             background-color: $color-1
             border-radius: 50%
-            transition: margin 1s
-    
-        .mode__circle--clear
-            margin: auto
-            margin-right: 0
-            background-color: $color-2
+            position: absolute
+            left: .6rem
+            transition: transform .6s
 
-    .mode__container--clear
-        background-color: $color-1-clear
+    .active
+        &::after
+            transform: translateX(100%)
+            transition: transform .6s
+            background-color: $color-2
